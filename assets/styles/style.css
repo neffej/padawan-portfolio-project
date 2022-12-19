@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --text: #4c5f7b;
+  --teal: #88bebf;
+  --dark:#32343d;
+  --light: #ededf6; 
+}
+
+/* General settings */
+a {
+  outline:none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  border-bottom: 3px solid var(--dark);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 48px;
+  padding: 5px;
+}
+
+h2 {
+  display:inline-block;
+  margin: 2% 0;
+  padding: 0 5px;
+  min-width:200px;
+  font-size: 48px;
+  align-content: center;
+  /* border-right: 5px solid var(--dark); */
+}
+
+h3 {
+  text-align: center;
+  background-color: #81c3d7;
+  color: var(--text);
+  font-size:x-large;
+  width:100%;
+}
+
+
+/* Header Section start */
+header {
+  padding: 40px;
+  text-align: center;
+  background-color:var(--dark)  ;
+  color: var(--teal);
+  width:100%;
+  min-width: 768px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header h1{
+  display: flex;
+  align-items: center;
+  background-color: #88bebf;
+  color: #32343d;
+  font-weight: 800;
+
+}
+
+header img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  order: 0;
+}
+
+header nav{
+  order:3;
+}
+
+header li{
+  padding:5px;
+  border-bottom: 3px var(--teal);
+  color: var(--teal);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  padding:5px;
+  line-height:1.5;
+}
+
+nav a {
+  color: var(--teal);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: solid var(--teal);
+}
+
+nav a:hover {
+  color: #fff;
+}
+/* Header Section end */
+
+/* Main section stylings */
+.title {
+  border-right: 5px solid var(--dark);
+  min-height: 100%;
+  text-align: right;
+  padding-right: 40px;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.title h2 {
+  font-size: 36px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background-color: #ededf6;
+  color: #4c5f7b;
+  min-width:768;
+  padding:5px 0px;
+}
+/* Main section end */
+
+/* Hero section end */
+.subtitle{
+  background-image: url("../images/banner3.jpg");
+  height:150px;
+  width:100%;
+  padding:4% 1%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:flex;  
+  flex-direction:row-reverse;
+  align-items: flex-end;
+}
+
+.subtitle ul{
+  font-size: 32px;
+  background-color:var(--teal);
+  line-height: 1.5;
+}
+/* Hero section end */
+
+/* About Me section stylings */
+.bio{
+  padding:5px;
+  display:inline-block;
+  /* border-left: 3px solid var(--dark); */
+}
+
+.info {
+  padding:15px 0px;
+  display:flex;
+  background-color: var(--light);
+}
+/* About Me end */
+
+/* Applications stylings */
+#section2{
+  background-color: var(--light);
+ }
+
+.applications {
+  flex: 4;
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px 0px;
+  display: block;
+  /* flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start; */
+  /* border-left:3px solid var(--dark); */
+}
+
+
+.main-app{
+  background-image: url("../images/party shot.jpg");
+  height:300px;
+  width:100%;
+  /* margin-bottom: 0.5%; */
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+  padding-bottom:1%;
+  border: 3px solid var(--teal);
+}
+
+.main-app div{
+  background-color: var(--teal);
+  color: var(--text);
+  font-size:32px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+div small{
+  font-size:80%;
+  color:black;
+  display:block;
+}
+
+#calculator {
+  background-image: url("../images/nik-shuliahin-rkFIIE9PxH0-unsplash.jpg");
+  height:150px;
+  width:45%;
+  padding:4% 1%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:flex;  
+  flex-direction:row-reverse;
+  align-items: flex-end;
+  border: 3px solid var(--teal);
+}
+
+#LED{
+  background-image: url("../images/clay-banks-pNEmlb1CMZM-unsplash.jpg");
+  height:150px;
+  width:45%;
+  padding:4% 1%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:flex;  
+  flex-direction:row-reverse;
+  align-items: flex-end;
+  border: 3px solid var(--teal);
+}
+
+#pastel{
+  background-image: url("../images/marquise-de-photographie-HLbyCQDwQIg-unsplash.jpg");
+  height:150px;
+  width:45%;
+  padding:4% 1%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:flex;  
+  flex-direction:row-reverse;
+  align-items: flex-end;
+  border: 3px solid var(--teal);
+}
+
+#buddy{
+  background-image: url("../images/mario-alvarez-M1YdS0g8SRA-unsplash.jpg");
+  height:150px;
+  width:45%;
+  padding:4% 1%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:flex;  
+  flex-direction:row-reverse;
+  align-items: flex-end;
+  border: 3px solid var(--teal);
+}
+ 
+/* Applications end */
+
+/* Footer styling */
+footer {
+  width: 100%;
+  bottom: 0;
+  /* padding: 5px 10px; */
+  text-align: center;
+  background-color: var(--light);
+  color: var(--text);
+  margin-top: auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  color:var(--dark);
+  display: inline-block;
+  justify-content: space-between;
+  min-width: 150px;
+  line-height:1.5;
+  border-bottom: 3px var(--dark);
+  padding:10px;
+}
+
+#section3 a{
+  border-bottom: 3px solid var(--dark);
+}
+/* Footer end */
+
+/* Active stylings */
+#main:hover {
+  border-width:5px;
+  box-shadow:inset black; 
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+/* Active stylings end */
+
+
+
+/* Unused stylings below: */
+
+
+/* aside {
+  width: 10%;
+  box-shadow: inset 5px 0 5px -5px var(--dark);
+
+  padding: 15px;
+  text-align: left;
+  background-color: var(--light);
+  color: var(--text);
+} */
+
+/* h1 img{
+  padding:10px;
+} */
+
+/* .card {
+  border-width:0px;
+  border-color:black;
+  padding: 10px;
+  margin: 20px;
+  flex: 0 0 300px;
+  border-radius: 25px;
+  background-color: var(--light);
+}
+
+.card h3 {
+  padding: 20px;
+  margin: 0;
+  border-radius:  25px 25px 0px 0px ;
+  color:black;
+  font-weight: 700;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius:  0 0 15px 15px;
+} */
+
+/* div > * .box {
+  background-color: var(--teal);
+  display:block;
+} */
