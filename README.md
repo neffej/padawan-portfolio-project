@@ -17,7 +17,9 @@ For this project, I wrote the HTML and CSS for my own sample professional portfo
 -When I develop and deploy more web applications, I will update the placeholders to live websites
 
 ## Links
+https://neffej.github.io/padawan-portfolio-project/
 
+https://github.com/neffej/padawan-portfolio-project
 
 
 ## Installation
