@@ -7,7 +7,7 @@ For this project, I wrote the HTML and CSS for my own sample professional portfo
 ## Tasks Completed
 
 -The website has a header, body and footer section.
--- The header has an integrated navigation bar with links to the other sections of the webpage
+-- The header has an integrated navigation bar with links to the other sections of the webpagei
 --The body includes a banner image, an About Me section, and a gallery of deployed web applications.
 --The images in the gallery are clickable links
 --The footer includes links to several ways to contact me
