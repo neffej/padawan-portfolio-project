@@ -133,9 +133,10 @@ main {
   min-width:768;
   padding:5px 0px;
 }
+
 /* Main section end */
 
-/* Hero section end */
+/* Hero section start */
 .subtitle{
   background-image: url("../images/banner3.jpg");
   height:150px;
@@ -160,6 +161,8 @@ main {
 .bio{
   padding:5px;
   display:inline-block;
+  min-width: 79%;
+  max-width: 79%
   /* border-left: 3px solid var(--dark); */
 }
 
@@ -177,13 +180,15 @@ main {
 
 .applications {
   flex: 4;
+  width: 600 px;
+  height: auto;
   background-color: #fff;
   padding: 5px;
   margin: 5px 0px;
-  display: block;
-  /* flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start; */
+  /* display: block; */
+  flex-wrap: wrap;
+  /* justify-content: space-evenly;
+  align-items: flex-start;  */
   /* border-left:3px solid var(--dark); */
 }
 
@@ -213,7 +218,7 @@ main {
 div small{
   font-size:80%;
   color:black;
-  display:block;
+  /* display:block; */
 }
 
 #calculator {
@@ -312,6 +317,29 @@ footer a{
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
+  }
+
+  .title{
+    min-width:100%;
+    max-width:100%;
+    border:0 0 3px 0 solid var(--dark;)
+  }
+
+  .bio{
+    min-width:100%;
+    max-width:100%;
+  }
+
+  .info{
+    flex-direction:column;
+  }
+  .applications{
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+  }
+
   }
 }
 
