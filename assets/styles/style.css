@@ -179,40 +179,79 @@ main {
  }
 
 .applications {
-  flex: 4;
-  width: 600 px;
-  height: auto;
+  display:grid;
+  grid-template-columns: 3, 1fr;
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  /* width: 600 px; */
+  /* height: auto; */
   background-color: #fff;
   padding: 5px;
   margin: 5px 0px;
   /* display: block; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* justify-content: space-evenly;
   align-items: flex-start;  */
   /* border-left:3px solid var(--dark); */
 }
 
+.one {
+  grid-column-start:1;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
 
-.main-app{
+}
+
+.two{
+  grid-column:1;
+  grid-row:2;
+}
+
+.three{
+  grid-column:2;
+  grid-row:2;
+}
+
+.four{
+  grid-column:1;
+  grid-row:3;
+}
+
+.five{
+  grid-column:2;
+  grid-row:3;
+}
+
+
+
+.one{
   background-image: url("../images/party shot.jpg");
-  height:300px;
-  width:100%;
+  /* height:300px;
+  width:100%; */
   /* margin-bottom: 0.5%; */
   background-size:cover;
   background-position:center;
-  display:flex;
-  align-items:flex-end;
+  /* display:flex;
+  align-items:flex-end; */
   padding-bottom:1%;
   border: 3px solid var(--teal);
+  opacity:1.0;
 }
 
-.main-app div{
+.one:hover{
+  box-shadow: inset 0 0 30px var(--teal);
+  opacity: 0.5;
+}
+
+.one div{
   background-color: var(--teal);
   color: var(--text);
   font-size:32px;
-  display:flex;
+  /* display:flex;
   flex-direction:column;
-  align-items:flex-start;
+  align-items:flex-start; */
 }
 
 div small{
@@ -221,60 +260,70 @@ div small{
   /* display:block; */
 }
 
+.applications>div {
+  border: 3px solid var(--teal);
+  opacity:1.0;
+}
+
+.applications>div:hover{
+  box-shadow: inset 0 0 30px var(--teal);
+  opacity: 0.5;
+}
+
 #calculator {
   background-image: url("../images/nik-shuliahin-rkFIIE9PxH0-unsplash.jpg");
-  height:150px;
-  width:45%;
-  padding:4% 1%;
+  /* height:150px;
+  width:45%; */
+  /* padding:4% 1%; */
   background-position: center;
   background-repeat:no-repeat;
   background-size:cover;
   display:flex;  
   flex-direction:row-reverse;
   align-items: flex-end;
-  border: 3px solid var(--teal);
+
 }
 
 #LED{
   background-image: url("../images/clay-banks-pNEmlb1CMZM-unsplash.jpg");
-  height:150px;
+  /* height:150px;
   width:45%;
-  padding:4% 1%;
+  padding:4% 1%; */
   background-position: center;
   background-repeat:no-repeat;
   background-size:cover;
   display:flex;  
   flex-direction:row-reverse;
   align-items: flex-end;
-  border: 3px solid var(--teal);
+  /* border: 3px solid var(--teal); */
 }
 
 #pastel{
   background-image: url("../images/marquise-de-photographie-HLbyCQDwQIg-unsplash.jpg");
-  height:150px;
+  /* height:150px;
   width:45%;
-  padding:4% 1%;
+  padding:4% 1%; */
   background-position: center;
   background-repeat:no-repeat;
   background-size:cover;
   display:flex;  
   flex-direction:row-reverse;
   align-items: flex-end;
-  border: 3px solid var(--teal);
+  /* border: 3px solid var(--teal); */
 }
 
 #buddy{
   background-image: url("../images/mario-alvarez-M1YdS0g8SRA-unsplash.jpg");
-  height:150px;
+  /* height:150px;
   width:45%;
-  padding:4% 1%;
+  padding:4% 1%; */
   background-position: center;
   background-repeat:no-repeat;
   background-size:cover;
   display:flex;  
   flex-direction:row-reverse;
   align-items: flex-end;
-  border: 3px solid var(--teal);
+  /* border: 3px solid var(--teal); */
 }
  
 /* Applications end */
